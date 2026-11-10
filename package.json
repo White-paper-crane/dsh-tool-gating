@@ -1,0 +1,16 @@
+{
+  "name": "dsh-tool-gating",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "DSH 本地插件：core 常驻，其余工具按组加载（L0/L1/L1.5）",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "scripts": {
+    "test": "node tests/test-state.mjs && node tests/test-auto.mjs && node tests/selftest.mjs",
+    "test:state": "node tests/test-state.mjs",
+    "selftest": "node tests/selftest.mjs"
+  }
+}
